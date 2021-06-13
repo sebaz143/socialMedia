@@ -1,0 +1,51 @@
+…or create a new repository on the command line
+
+echo "# socialMedia" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/sebaz143/socialMedia.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/sebaz143/socialMedia.git
+git branch -M main
+git push -u origin main
+
+-------------------------------------------------------------------------------------------------------------
+
+heroku login
+
+Create a new Git repository
+Initialize a git repository in a new or existing directory
+
+$ cd my-project/
+$ git init
+$ heroku git:remote -a socialmedia-go
+
+Deploy your application
+Commit your code to the repository and deploy it to Heroku using Git.
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+---------------------------------------------------------------------------------------------------------------
+
+MONGO
+
+mongodb+srv://admin:<password>@sebasmongodb.tp0w7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
+
+  import "go.mongodb.org/mongo-driver/mongo"
+
+  ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+  defer cancel()
+  client, err := mongo.Connect(ctx, options.Client().ApplyURI(
+     "mongodb+srv://admin:<password>@sebasmongodb.tp0w7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  ))
+  if err != nil { log.Fatal(err) }
+  
+  admin
+  admin
