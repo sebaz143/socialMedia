@@ -49,3 +49,20 @@ mongodb+srv://admin:<password>@sebasmongodb.tp0w7.mongodb.net/myFirstDatabase?re
   
   admin
   admin
+
+--------------------------------------------------------------------------------------------------------------
+
+depencias:
+
+go.mongodb.org/mongo-driver/mongo
+go.mongodb.org/mongo-driver/mongo/options
+go.mongodb.org/mongo-driver/bson
+go.mongodb.org/mongo-driver/bson/primitive
+golang.org/x/crypto/bcrypt para ecriptar las contraseñas
+github.com/gorilla/mux para manejar la API
+github.com/rs/cors cors nos permite otorgar permisos a nuestra API para ser accedida remotamente
+github.com/dgrijalva/jwt-go json web token
+
+-------------------------------------------------------------------------------------------------------------
+
+git status -> me permite ver todo lo que nos falta subir.
