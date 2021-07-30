@@ -13,7 +13,7 @@ func ChequeoYaExisteUsuario(email string) (models.Usuario, bool, string) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	db := MongoCon.Database("socialMediaGo")
+	db := MongoCon.Database("socialMediaGO")
 	coleccion := db.Collection("user")
 
 	condicion := bson.M{"email": email} //formatea el email de entrada a la funcion en formato bson , asignando a la clave email el valo email

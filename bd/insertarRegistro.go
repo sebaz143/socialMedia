@@ -13,7 +13,7 @@ func InsertarRegistro(u models.Usuario) (string, bool, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel() //en la caja de ejecuciones de context se cancela la operacion de timeout, para que no quede la operacion abierta
 
-	db := MongoCon.Database("socialMediaGo")
+	db := MongoCon.Database("socialMediaGO")
 	coleccion := db.Collection("user")
 	u.Password, _ = EncriptarPassword(u.Password)
 

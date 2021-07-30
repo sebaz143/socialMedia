@@ -54,15 +54,19 @@ mongodb+srv://admin:<password>@sebasmongodb.tp0w7.mongodb.net/myFirstDatabase?re
 
 depencias:
 
-go.mongodb.org/mongo-driver/mongo
+go.mongodb.org/mongo-driver/mongo                         
 go.mongodb.org/mongo-driver/mongo/options
 go.mongodb.org/mongo-driver/bson
 go.mongodb.org/mongo-driver/bson/primitive
-golang.org/x/crypto/bcrypt para ecriptar las contraseñas
-github.com/gorilla/mux para manejar la API
-github.com/rs/cors cors nos permite otorgar permisos a nuestra API para ser accedida remotamente
-github.com/dgrijalva/jwt-go json web token
+golang.org/x/crypto/bcrypt                    #para ecriptar las contraseñas
+github.com/gorilla/mux                        #para manejar la API
+github.com/rs/cors                            #cors nos permite otorgar permisos a nuestra API para ser accedida remotamente
+github.com/dgrijalva/jwt-go                   #json web token
 
 -------------------------------------------------------------------------------------------------------------
 
-git status -> me permite ver todo lo que nos falta subir.
+git status                      -> me permite ver todo lo que nos falta subir.
+git add .                       -> sube todo al git local
+git commit -m "mensaje"         -> mensaje para el registro de lo que se va a actualizar
+git push origin master          -> el paquete original que es githug le vamos a meter la rama master
+git push heroku master          -> para subirlo a heroku, es importante saber este link https://socialmedia-go.herokuapp.com/ , acá esta nuestra API en heroku. 
